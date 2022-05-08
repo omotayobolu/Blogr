@@ -1,0 +1,226 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --footer-text: hsl(240, 2%, 79%);
+  --body-copy: hsl(207, 13%, 34%);
+  --footer-background: hsl(240, 10%, 16%);
+  --light-red: hsl(356, 100%, 66%);
+  --very-light-red: hsl(355, 100%, 74%); /*CTA hover background*/
+  --very-dark-blue: hsl(208, 49%, 24%);
+  /* background gradient body */
+  --very-dark-grayish-blue: hsl(237, 17%, 21%);
+  --very-dark-desaturated-blue: hsl(237, 23%, 32%);
+  /* background-gradient mobile view  */
+  --Very-light-red-mv: hsl(13, 100%, 72%);
+  --Light-red-mv: hsl(353, 100%, 62%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Title section */
+header {
+  height: 50vw;
+  background-image: url(../images/bg-pattern-intro-desktop.svg) no-repeat 2000px
+    2000px left;
+  /* background-repeat: no-repeat;
+  background-size: 2000px 2000px;
+  background-position: left;
+  background-color: var(--light-red); */
+  /* background-color:  */
+  z-index: 1;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vw;
+  background-image: linear-gradient(
+    to right,
+    hsl(13, 100%, 72%),
+    hsl(353, 100%, 62%)
+  );
+  z-index: -2;
+  border-bottom-left-radius: 100px;
+}
+
+.container {
+  margin: 0 10%;
+  position: relative;
+}
+
+.container .navbar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px 0 5px;
+  z-index: 2;
+  position: relative;
+}
+
+.container .navbar .navbar-nav {
+  display: flex;
+  align-items: center;
+  margin-left: -13rem;
+}
+
+.container .navbar .navbar-nav a {
+  padding: 0 20px;
+  color: var(--white);
+}
+
+.container .navbar .register {
+  display: flex;
+  justify-content: space-between;
+  justify-self: flex-end;
+  align-items: center;
+}
+
+.container .navbar .register a {
+  padding: 0 20px;
+  color: var(--white);
+}
+
+.sign-up-btn,
+.start-btn {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  background-color: var(--white);
+  color: var(--light-red);
+  font-family: "Ubuntu", sans-serif;
+  cursor: pointer;
+}
+
+.learn-btn {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--light-red);
+  font-family: "Ubuntu", sans-serif;
+  margin-left: 15px;
+}
+
+.header-content {
+  display: grid;
+  place-items: center;
+  color: var(--white);
+  margin-top: 200px;
+}
+
+.header-content p {
+  padding: 20px 0;
+}
+
+.header-content-btn {
+  display: flex;
+  margin: 15px;
+  padding: 0 20px;
+}
+
+/* Future section */
+#future {
+  background-color: var(--white);
+}
+
+.future-header {
+  color: var(--very-dark-blue);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-top: 100px;
+  display: grid;
+  place-items: center;
+}
+
+#future .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 40px;
+  margin-right: 0;
+}
+
+.future-content h4 {
+  font-size: 1.1rem;
+  padding: 20px 0;
+  color: var(--very-dark-blue);
+}
+
+.future-content p {
+  width: 500px;
+  line-height: 1.5;
+  color: var(--very-dark-grayish-blue);
+}
+
+.future-img img {
+  width: 750px;
+  height: 700px;
+  margin-top: -150px;
+  right: -150px;
+  position: absolute;
+}
+
+/* art section*/
+#art {
+  background-color: var(--very-dark-grayish-blue);
+  margin-top: 200px;
+  height: 400px;
+}
+
+.art-img {
+  margin-top: -70px;
+}
+
+#art .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.art-content {
+  color: var(--white);
+  padding-top: 150px;
+  padding-left: 20px;
+}
+
+.art-content h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 20px 0;
+}
+
+.art-content p {
+  line-height: 1.5;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
