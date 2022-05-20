@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0 "
+    />
     <!-- displays site properly based on user's device -->
 
     <link
@@ -26,15 +29,25 @@
       <div class="container">
         <nav class="navbar">
           <div class="logo"><img src="./images/logo.svg" /></div>
+          <div class="toggle"></div>
+
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="#">Product</a>
+              <a href="#">Product</a><img src="./images/icon-arrow-light.svg" />
             </li>
             <li class="nav-item">
-              <a href="#">Company</a>
+              <a href="#">Company</a><img src="./images/icon-arrow-light.svg" />
             </li>
             <li class="nav-item">
-              <a href="#">Connect</a>
+              <a href="#">Connect</a><img src="./images/icon-arrow-light.svg" />
+
+              <div class="cont">
+                <ul>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Newsletter</a></li>
+                  <li><a href="#">LinkedIn</a></li>
+                </ul>
+              </div>
             </li>
           </ul>
           <ul class="register">
@@ -42,6 +55,7 @@
               <a href="#">Login</a>
             </li>
             <li class="sign-up-btn">Sign Up</li>
+            <div class="toggle"></div>
           </ul>
         </nav>
 
@@ -79,12 +93,18 @@
             you're in full control.
           </p>
         </div>
-        <div class="future-img">
+        <picture class="future-img">
           <img
             src="./images/illustration-editor-desktop.svg"
             alt="future-illustration"
+            class="future-img-desktop"
           />
-        </div>
+          <img
+            src="./images/illustration-editor-mobile.svg"
+            alt="future-illustration"
+            class="future-img-mv"
+          />
+        </picture>
       </div>
     </section>
 
@@ -106,25 +126,114 @@
       </div>
     </section>
 
-    <!-- Product Overview Pricing Marketplace Features Integrations Company About
-    Team Blog Careers Connect Contact Newsletter LinkedIn Login Sign Up Start
-    for Free Learn More   Free, open, simple Blogr is
-    a free and open source application backed by a large community of helpful
-    developers. It supports features such as code syntax highlighting, RSS
-    feeds, social media integration, third-party commenting tools, and works
-    seamlessly with Google Analytics. The architecture is clean and is
-    relatively easy to learn. Powerful tooling Batteries included. We built a
-    simple and straightforward CLI tool that makes customization and deployment
-    a breeze, but capable of producing even the most complicated sites. Product
-    Overview Pricing Marketplace Features Integrations Company About Team Blog
-    Careers Connect Contact Newsletter LinkedIn
- -->
-    <!-- <div class="attribution">
+    <section id="features">
+      <div class="features-content">
+        <div class="features-img">
+          <img
+            src="./images/illustration-laptop-desktop.svg"
+            class="features-img-desktop"
+          />
+          <img
+            src="./images/illustration-laptop-mobile.svg"
+            class="features-img-mv"
+          />
+        </div>
+        <div class="features-text">
+          <h3>Free, open, simple</h3>
+          <p>
+            Blogr is a free and open source application backed by a large
+            community of helpful developers. It supports features such as code
+            syntax highlighting, RSS feeds, social media integration,
+            third-party commenting tools, and works seamlessly with Google
+            Analytics. The architecture is clean and is relatively easy to
+            learn.
+          </p>
+          <br /><br />
+          <h3>Powerful tooling</h3>
+          <p>
+            Batteries included. We built a simple and straightforward CLI tool
+            that makes customization and deployment a breeze, but capable of
+            producing even the most complicated sites.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-logo">
+          <img src="./images/logo.svg" alt="Blogr" />
+        </div>
+
+        <div class="footer-lists">
+          <ul>
+            <li class="lists-head">Product</li>
+            <br />
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Integrations</a></li>
+          </ul>
+          <ul>
+            <li class="lists-head">Company</li>
+            <br />
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+          <ul>
+            <li class="lists-head">Connect</li>
+            <br />
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal">
+      <div class="modal-box">
+        <div class="modal-body">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#">Product</a><img src="./images/icon-arrow-dark.svg" />
+            </li>
+            <li class="nav-item">
+              <a href="#">Company</a><img src="./images/icon-arrow-dark.svg" />
+            </li>
+            <li class="nav-item">
+              <a href="#">Connect</a><img src="./images/icon-arrow-dark.svg" />
+              <div class="cont">
+                <ul>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#">Newsletter</a>
+                  </li>
+                  <li>
+                    <a href="#">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="m-register">
+            <li class="m-login-btn">Login</li>
+            <li class="m-sign-up-btn">Sign Up</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+      >. Coded by <a href="#">Boluwatife Omotayo</a>.
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
