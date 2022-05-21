@@ -466,12 +466,16 @@ footer a {
 
   #future .container {
     grid-template-columns: 1fr;
-    margin-bottom: 300px;
+    margin-bottom: 100px;
     padding: 30px;
   }
 
   .future-header {
     font-size: 1.7rem;
+  }
+
+  .future-content {
+    margin-top: 350px;
   }
 
   .future-content h4 {
@@ -490,7 +494,9 @@ footer a {
   }
 
   .future-img .future-img-mv {
-    display: none;
+    margin-top: -1000px;
+    display: block;
+    max-width: 100%;
   }
 
   #art {
@@ -531,12 +537,17 @@ footer a {
     flex-direction: column;
   }
 
+  .features-img {
+    margin-left: 0;
+  }
+
   .features-img .features-img-desktop {
     display: none;
   }
 
   .features-img .features-img-mv {
-    display: none;
+    display: block;
+    max-width: 100%;
   }
 
   .features-text {
