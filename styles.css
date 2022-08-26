@@ -390,7 +390,6 @@ footer a {
   position: relative;
   margin: 25% 5%;
   width: 90%;
-  height: 450px;
   background-color: var(--white);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   animation: modalopen 1s;
@@ -598,9 +597,11 @@ footer a {
     color: var(--very-dark-grayish-blue);
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .modal-body .navbar-nav .nav-item img {
     padding: 0 10px;
   }
@@ -615,8 +616,7 @@ footer a {
     display: block;
     padding: 25px 50px;
     color: var(--very-dark-grayish-blue);
-    position: absolute;
-    margin-top: 150px;
+    position: relative;
   }
 
   .modal-body .navbar-nav li:hover .cont ul {
@@ -630,7 +630,6 @@ footer a {
   }
 
   .modal-body .m-register {
-    margin-top: 150px;
     display: block;
     z-index: 10;
     display: grid;
